@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(97, 131, 169);
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#img1 {
+    width: 200px;;
+    border-radius: 30px;
+}
+
+#img2 {
+    width: 200px;
+    height: 266px;
+    border-radius: 30px;
+}
+
+#link {
+    background-color: white;
+    color: rgb(131, 58, 118);
+    outline: 1px;
+}
