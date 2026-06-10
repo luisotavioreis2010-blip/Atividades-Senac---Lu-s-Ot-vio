@@ -1,0 +1,32 @@
+div {
+    border: 3px solid;
+    height: 20px;
+    margin: 10px 0px 10px 0;
+    position: relative;
+}
+
+#header {
+    height: 80px;
+}
+
+#menu {
+    position: sticky;
+    top: 0;
+}
+
+#fotos {
+    height: 150px;
+    width: 150px;
+    margin: 20px 0 0 20px;
+    border-radius: 20px;
+}
+
+#conteudo {
+    height: 1300px;
+}
+
+#falcao {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
