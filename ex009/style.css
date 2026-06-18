@@ -8,6 +8,8 @@ body {
 
     margin: 50px;
 
+    flex-direction: column;
+
 }
 
 
@@ -20,6 +22,14 @@ body {
 
     --interno: rgb(224, 224, 224);
 
+}
+
+.dark-mode {
+    
+    --texto:white;
+    --conteudo: rgb(38, 44, 47);
+    --interno: rgb(90, 78, 150);
+    --menu: black;
 }
 
 
@@ -38,7 +48,7 @@ body {
 
     justify-content: space-around;
 
-    background-color: rgb(179, 200, 252);
+    background-color: var(--menu);
 
     min-width: 900px;
 
