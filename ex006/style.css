@@ -1,0 +1,38 @@
+body {
+    padding: 30px;
+    background-color: rgb(189, 149, 250);
+    margin: 0 auto;
+}
+
+#cx1 {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 30px;
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: white;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0 auto;
+}
+
+menu{
+    background: url('image.png') center center/cover;
+    height: 200px;
+    width: 500px;
+    margin: 20px auto;   
+}
+
+p {
+    margin: 20px;
+}
+

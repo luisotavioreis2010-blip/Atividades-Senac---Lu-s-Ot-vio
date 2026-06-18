@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: white;
+    --bgMenu: black;
+    --bgBody: white;
+    --btnHover: rgb(56, 59, 81);
+}
+
+/* --- ESTILOS PARA TELA GRANDE (COMPUTADOR) --- */
+
+/* Esconde o botão hambúrguer no computador, pois o menu já fica todo visível */
+label[for="btnMenu"] {
+    display: none;
+    height: 50px;
+    width: 100%;
+    background-color: var(--bgMenu);
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    color: var(--font);
+    font-size: 24px;
+}
+
+/* Menu horizontal para telas grandes */
+nav {
+    display: flex;
+    background-color: var(--bgMenu);
+    flex-direction: row; /* Links um ao lado do outro */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font);
+    padding: 16px;
+    min-width: 120px;
+    text-align: center;
+    border: 1px solid rgb(73, 151, 219);
+    flex: 1;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background-color: var(--btnHover);
+}
+
+/* --- ESTILOS PARA TELA PEQUENA (CELULAR) --- */
+@media (max-width: 800px) {
+    
+    /* Mostra o botão hambúrguer no celular */
+    label[for="btnMenu"] {
+        display: block;
+    }
+
+    /* Esconde o menu por padrão no celular */
+    nav {
+        display: none; 
+        flex-direction: column; /* Links um embaixo do outro */
+    }
+
+    /* Classe que o JavaScript vai colocar/tirar para mostrar o menu */
+    nav.active {
+        display: flex;
+    }
+}
